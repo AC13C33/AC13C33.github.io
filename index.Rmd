@@ -9,19 +9,28 @@ output:
 ### This is Yishan Chen's Page
 
 
-#### Introduction
+#### Personal Introduction
 
 Hi! I'm Yishan Chen. I'm currently a second-year MPH student at the Columbia University Mailman School of Public Health with a Master of Public Health in Biostatistics and a Certificate in Epidemiology of Chronic Disease.
 
 
-#### My pet
+#### My Pet
 
 I have a sweet male maltese called Rookie. He is 7 month old. 
-Here's a picture of Rookie 
+Here's a picture of Rookie!
+
 <img src="image/rookie.jpeg" style="width:50%">
 
+
+#### Hobbies
+
+I love baking!
+
+<img src="image/baking.jpeg" style="width:50%">
 
 
 ###### Here's a direct link to the resume page: [resume](resume.html)
 
-###### Here's a direct link to the resume page: [professionalnetworks](professionalnetworks.html)
+###### Here's a direct link to the professional networks page: [professionalnetworks](professionalnetworks.html)
+
+###### Here's a direct link to the plotly page: [plotly](plotly.html)

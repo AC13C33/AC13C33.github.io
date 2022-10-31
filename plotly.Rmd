@@ -21,10 +21,39 @@ data("rest_inspec")
 
 restaurant_inspections = 
   rest_inspec %>% 
-  select(action, boro, critical_flag, cuisine_description, inspection_date, inspection_type, score, violation_code, violation_description) %>% 
-  filter(score %in% 0:10)
+  select(boro, critical_flag, cuisine_description, inspection_date, inspection_type, score, grade, violation_code, violation_description) %>% 
+  filter(critical_flag == "Critical") %>% 
+  drop_na(grade)
 
 restaurant_inspections
 ```
 
+
+Make a bar plot 
+```{r}
+restaurant_inspections %>% 
+  count(cuisine_description) %>% 
+    mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>%
+plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description, type = "bar", colors = "viridis")  %>% 
+  layout(title = 'NYC Restaurant Cuisine Description')
+```
+
+
+Make a box plot
+```{r}
+restaurant_inspections %>% 
+  mutate(boro = fct_reorder(boro, score)) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis") %>% 
+  layout(title = 'NYC Restaurant Inspections Score by Borough')
+```
+
+
+Make a pie plot
+```{r}
+restaurant_inspections %>% 
+  plot_ly(labels = ~grade, type = 'pie') %>% 
+  layout(title = 'NYC Restaurant Inspections Grade',
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
 

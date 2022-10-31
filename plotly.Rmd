@@ -1,22 +1,30 @@
 ---
-title: "Plotly of Instacart"
+title: "Plotly of NYC Restaurant Inspections"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-### This is page of Plotly of Instacart
+### This is page of Plotly of NYC Restaurant Inspections
 
-```{r, eval=FALSE}
+```{r}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
+
+Data Cleaning
 ```{r}
-data("instacart")
+data("rest_inspec")
 
+restaurant_inspections = 
+  rest_inspec %>% 
+  select(action, boro, critical_flag, cuisine_description, inspection_date, inspection_type, score, violation_code, violation_description) %>% 
+  filter(score %in% 0:10)
 
+restaurant_inspections
 ```
+
 

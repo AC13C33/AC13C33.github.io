@@ -11,7 +11,7 @@
 
 
 
-<title>Plotly of Instacart</title>
+<title>Plotly of NYC Restaurant Inspections</title>
 
 <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -363,16 +363,64 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Plotly of Instacart</h1>
+<h1 class="title toc-ignore">Plotly of NYC Restaurant Inspections</h1>
 
 </div>
 
 
-<div id="this-is-page-of-plotly-of-instacart" class="section level3">
-<h3>This is page of Plotly of Instacart</h3>
-<pre class="r"><code>library(tidyverse)
-library(p8105.datasets)
+<div id="this-is-page-of-plotly-of-nyc-restaurant-inspections"
+class="section level3">
+<h3>This is page of Plotly of NYC Restaurant Inspections</h3>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+## ✔ ggplot2 3.3.6      ✔ purrr   0.3.5 
+## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+## ✔ tidyr   1.2.0      ✔ stringr 1.4.1 
+## ✔ readr   2.1.2      ✔ forcats 0.5.2 
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(p8105.datasets)
 library(plotly)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;
+## 
+## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot
+## 
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter
+## 
+## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<p>Data Cleaning</p>
+<pre class="r"><code>data(&quot;rest_inspec&quot;)
+
+restaurant_inspections = 
+  rest_inspec %&gt;% 
+  select(action, boro, critical_flag, cuisine_description, inspection_date, inspection_type, score, violation_code, violation_description) %&gt;% 
+  filter(score %in% 0:10)
+
+restaurant_inspections</code></pre>
+<pre><code>## # A tibble: 92,572 × 9
+##    action        boro  criti…¹ cuisi…² inspection_date     inspe…³ score viola…⁴
+##    &lt;chr&gt;         &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dttm&gt;              &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;  
+##  1 Violations w… MANH… Critic… Americ… 2014-11-13 00:00:00 Pre-pe…     9 02G    
+##  2 Violations w… MANH… Not Cr… Donuts  2016-11-28 00:00:00 Cycle …     7 10B    
+##  3 Violations w… MANH… Not Cr… Korean  2016-01-22 00:00:00 Cycle …     9 10F    
+##  4 Violations w… MANH… Not Cr… Korean  2016-05-10 00:00:00 Cycle …     6 10F    
+##  5 Violations w… MANH… Critic… Americ… 2015-02-27 00:00:00 Cycle …     8 02G    
+##  6 Violations w… MANH… Not Cr… Pizza   2017-06-28 00:00:00 Cycle …     9 10F    
+##  7 Violations w… MANH… Critic… Americ… 2014-10-20 00:00:00 Cycle …     6 04L    
+##  8 Violations w… MANH… Critic… Americ… 2016-06-21 00:00:00 Cycle …     7 06D    
+##  9 Violations w… MANH… Critic… Seafood 2015-05-12 00:00:00 Cycle …    10 06D    
+## 10 Violations w… MANH… Not Cr… Americ… 2017-07-25 00:00:00 Cycle …    10 08A    
+## # … with 92,562 more rows, 1 more variable: violation_description &lt;chr&gt;, and
+## #   abbreviated variable names ¹​critical_flag, ²​cuisine_description,
+## #   ³​inspection_type, ⁴​violation_code</code></pre>
 </div>
 
 

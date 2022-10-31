@@ -11,6 +11,8 @@ navbar:
       href: http://github.com/AC13C33/
     - icon: fa-solid fa-globe
       href: https://www.linkedin.com/in/yishan-chen/
+    - text: "Dataset"
+      href: dataset.html
 output:
   html_document:
     theme: cerulean

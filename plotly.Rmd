@@ -7,3 +7,10 @@ output:
 ---
 
 ### This is page of Plotly of Instacart
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+

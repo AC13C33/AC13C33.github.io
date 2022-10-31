@@ -8,4 +8,5 @@ output:
 
 This is Yishan Chen's Professional Networks
 
+Here's my [LinkedIn] (https://www.linkedin.com/in/yishan-chen/)
 

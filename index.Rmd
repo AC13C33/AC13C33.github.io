@@ -38,4 +38,4 @@ I love baking!
 
 ###### Here's a direct link to the plotly page: [plotly](plotly.html)
 
-###### Here's a direct link to the dataset page: [dataset ](dataset.html)
+###### Here's a direct link to the dashboard page: [dashboard](dashboard.html)

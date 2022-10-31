@@ -7,5 +7,6 @@ output:
     theme: cerulean
 ---
 
-
 This is Yishan Chen's Page
+
+Here's a direct link to the resume page: [resume](resume.html)

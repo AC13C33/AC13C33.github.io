@@ -10,7 +10,7 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/AC13C33/
     - icon: fa-solid fa-globe
-      href: professionalnetworks.html
+      href: https://www.linkedin.com/in/yishan-chen/
 output:
   html_document:
     theme: cerulean

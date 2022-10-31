@@ -31,6 +31,4 @@ I love baking!
 
 ###### Here's a direct link to the resume page: [resume](resume.html)
 
-###### Here's a direct link to the professional networks page: [professionalnetworks](professionalnetworks.html)
-
 ###### Here's a direct link to the plotly page: [plotly](plotly.html)

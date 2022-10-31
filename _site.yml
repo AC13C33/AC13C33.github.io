@@ -9,6 +9,8 @@ navbar:
       href: mailto:<yc4016@cumc.columbia.com>
     - icon: fa-github fa-lg
       href: http://github.com/AC13C33/
+    - icon: fa-solid fa-globe
+      href: professionalnetworks.html
 output:
   html_document:
     theme: cerulean

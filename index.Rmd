@@ -10,3 +10,5 @@ output:
 This is Yishan Chen's Page
 
 Here's a direct link to the resume page: [resume](resume.html)
+
+Here's a direct link to the resume page: [professionalnetworks](professionalnetworks.html)

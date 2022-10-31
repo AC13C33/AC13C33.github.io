@@ -4,9 +4,38 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 This is Yishan Chen's Resume
 
 
+#### EDUCATION
+* Columbia University, Mailman School of Public Health New York, USA, 9/2021-Present
+ * Master of Public Health, Biostatistics, Certificate in Epidemiology of Chronic Disease
+* The Ohio State University Ohio, USA, 8/2016-5/2020
+  * Bachelor of Science, Chemistry
+
+#### WORK EXPERIENCE
+* Chinese Center for Disease Control and Prevention Beijing, China, 8/2020-3/2021
+  * Intern, Prevention and Control Office, Division of Infectious Diseases
+* Hangzhou Tigermed Consulting Co., Ltd, Shanghai Office Shanghai, China, 6/2019
+ * Intern, Research and Development Department 
+* Interflon China Shanghai, China, 5/2019
+  * Intern
+  
+#### LEADERSHIP EXPERIENCE
+* Quantitative Foundations Concentration of the Research Methods and Applications, Columbia University New York, USA, 9/2022-Present
+  * Teaching Assistant
+* Undergraduate Chemistry Department Survey Class, The Ohio State University Ohio, USA, 8/2018-12/2018
+  * Peer Mentor 
+  
+#### RESEARCH EXPERIENCE
+* COVID-19 Healthcare Personnel Study (CHPS), Columbia University New York, USA, 6/2022-Present
+  * Researcher Assistance 
+* Undergraduate Research, Cancer Projects Detection, The Ohio State University Ohio, USA, 8/2019-5/2020
+  * Undergraduate Researcher Assistance 
+
+#### SKILLS & HOBBIES
+* Data Analysis: Solid technical skills in analytical tools - SAS, R, Matlab, and Microsoft Office Suite.
+* Language: Mandarin (Native), and English (Fluent)
+* Hobbies: Ballet (14 years), skydiving, and exploring Disneyland.

@@ -6,15 +6,12 @@ output:
     toc_float: true
 ---
 
-### This is Yishan Chen's Page
-
-
-#### Personal Introduction
+## Personal Introduction
 
 Hi! I'm Yishan Chen. I'm currently a second-year MPH student at the Columbia University Mailman School of Public Health with a Master of Public Health in Biostatistics and a Certificate in Epidemiology of Chronic Disease.
 
 
-#### My Pet
+## My Pet
 
 I have a sweet male maltese called Rookie. He is 7 month old. 
 Here's a picture of Rookie!
@@ -22,7 +19,7 @@ Here's a picture of Rookie!
 <img src="image/rookie.jpeg" style="width:50%">
 
 
-#### Hobbies
+## Hobbies
 
 I love baking!
 
@@ -30,7 +27,7 @@ I love baking!
 
 
 
-#### Additional links
+## Additional links
 
 ###### Here's a direct link to the resume page: [resume](resume.html)
 

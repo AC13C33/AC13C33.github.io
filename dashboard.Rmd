@@ -26,10 +26,10 @@ restaurant_inspections =
 restaurant_inspections
 ```
 
-Column {data-width=650}
+Column {data-width=600}
 -----------------------------------------------------------------------
 
-### Chart A
+### Quantity of diffrent cuisine in NYC
 
 ```{r}
 restaurant_inspections %>% 
@@ -39,10 +39,10 @@ plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description, type = "
   layout(title = 'NYC Restaurant Cuisine Description')
 ```
 
-Column {data-width=350}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
-### Chart B
+### Score of inspectation by borough in NYC
 
 ```{r}
 restaurant_inspections %>% 
@@ -51,7 +51,7 @@ restaurant_inspections %>%
   layout(title = 'NYC Restaurant Inspections Score by Borough')
 ```
 
-### Chart C
+### Percentage of NYC restaurant inspections Grade
 
 ```{r}
 restaurant_inspections %>% 
